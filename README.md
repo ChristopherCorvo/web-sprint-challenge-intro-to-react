@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-1. Describe component state.
+  Answer: React JS is a library used to build user interfaces. React allows a developer to buid far more complex user interfaces and single page applications than if they were having to hard code using vanilla js, html and css. Its use of components allows you the developer to deconstruct a large project into smaller self contained components. These components will contain all sorts of data. They will contain js, html, css etc. These components can be imported and exported into other files and data or state can be passed to them via the use of props. 
 
-1. Describe props.
+2. Describe component state.
+
+  Answer: In react props can be passed from component to component. Often they are passing state data that is managed within the component. Simply put the State of a component is stored as an object. What that object contains is some observable and changealbe bit of data. The expression 'slice of state' means one of many changeable atmospheres. With a web application there are many things that are in flug. The user is interacting with the software and his or her choices or behavior creates data which can change the state of the software. Example lets say I built a react component thats sole job was to capture my response to this question 'Do you like pizza?' click 'Yes' or click 'No'. In side this component a slice of state which would be stored would be my answer to this question. That state can change depending on who the user is. 
+
+3. Describe props.
+  
+  Answer: Props is the mechanism in which data is passed from component to component in React. Generally speaking props are very similar to the idea of arguments and parameters in JS functions. Props can be consumed and they can also be sent out to be used by other components. Often props contain slices of state that a child arguement will need in order for it to complete its job. The passing of props is uni-directional, meaning that parents can pass to children but not vice versa. So if you want your grandson component to have access to a prop then you would have to pass it to your son component first. You are unable to skip generations with prop 'inheritance'. 
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+  Answer: Side effects are a way to deal with multiple possibilites. So for example in this project we use axios to request data from a web api. With that request their are two potential side effects 1) is that the request goes through and the data is fetched. 2) the request fails either going out or coming back. Both 1 & 2 are possilbe side effects of the axios request. The word contingency comes to my mind when thinking of side effects. In this project the backend is not in my control so I need a contingency plan for what to do if the data my app relyies on fails. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
