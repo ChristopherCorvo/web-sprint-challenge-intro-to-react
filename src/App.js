@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1> {/* get rid of this div later  */}
+      <h1 className="Header">Star Wars Characters</h1> {/* get rid of this div later  */}
       <Character characterData = {characterData}/>
     </div>
   );
